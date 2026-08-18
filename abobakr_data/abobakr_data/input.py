@@ -16,6 +16,17 @@ def calculate_sum(numbers):
     return total
 
 
+def generate_range(number):
+    result = []
+    current_number = 0
+
+    while current_number != number:
+        result += [current_number]
+        current_number += 1
+
+    return result
+
+
 def input_int(message: str) -> int:
     while True:
         try:
@@ -87,7 +98,7 @@ def zip_to_list_of_tuples(sequences):
 
     result = [
         convert_list_to_tuple([sequence[i] for sequence in sequences])
-        for i in range(length)
+        for i in generate_range(length)
     ]
 
     return result
@@ -98,7 +109,7 @@ def zip_to_set_of_tuples(sequences):
 
     result = {
         convert_list_to_tuple([sequence[i] for sequence in sequences])
-        for i in range(length)
+        for i in generate_range(length)
     }
 
     return result

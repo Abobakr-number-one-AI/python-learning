@@ -39,6 +39,9 @@ It currently includes functions for:
 
 * Input handling and validation
 * Printing separators
+* Calculating lengths
+* Calculating sums
+* Generating ranges
 * Converting lists to tuples
 * Set difference
 * Set union
@@ -76,12 +79,3 @@ This repository represents my progress as I learn Python, experiment with differ
     └── abobakr_data/
         ├── __init__.py
         └── ...
-```
-
-## Development Status
-
-This is an ongoing learning project.
-
-`calculator.py`, `to_do_list.py`, and `abobakr_data` are part of my Python learning journey.
-
-Once I finish learning Python, I plan to stop developing these projects and the `abobakr_data` library. After that, this repository will mainly serve as a record of my progress and the projects I built while learning Python.

@@ -2,6 +2,8 @@
 
 This repository contains small Python projects created while learning and practicing Python programming.
 
+The projects focus on understanding Python fundamentals, practicing problem-solving, and experimenting with different programming concepts.
+
 ## Projects
 
 ### Calculator
@@ -17,38 +19,52 @@ This repository contains small Python projects created while learning and practi
 * Exponentiation `^`
 * Roots `sqrt`
 
-The calculator also handles invalid mathematical cases such as division by zero, negative numbers under roots, and zero raised to a negative exponent.
+The calculator also handles invalid mathematical cases such as:
+
+* Division by zero
+* Negative numbers under roots
+* Zero raised to a negative exponent
 
 ### To-Do List
 
 `to_do_list.py` is a simple command-line to-do list project created to practice Python programming concepts.
 
-Development of this project will continue while I am learning Python. Once I finish learning Python, I plan to stop developing this project.
-
 ## Custom Library
 
-The `abobakr_data` folder contains a custom Python library used by the projects in this repository.
+The `abobakr_data` directory contains a custom Python library developed as part of my Python learning process.
 
-It currently provides helper functions such as:
+The library provides helper functions and small implementations created to practice Python fundamentals and understand how common Python operations work.
 
-* `get_float()`
-* `get_int()`
+It currently includes functions for:
 
-The library is mainly being developed as part of my Python learning process.
+* Input handling and validation
+* Printing separators
+* Converting lists to tuples
+* Set difference
+* Set union
+* Set intersection
+* Set symmetric difference
+* Recreating `zip()`-like operations
+* Calculating averages
 
-Once I finish learning Python, I plan to stop developing this library as well.
+Some functions intentionally recreate functionality that already exists in Python.
+
+The purpose is not to replace Python's built-in functions, but to understand the concepts behind them by implementing similar behavior manually.
 
 ## Purpose
 
 The main purpose of this repository is learning and practice.
 
-The code may not always use the most advanced or optimized approach. It represents my progress as I learn Python and experiment with different programming concepts.
+The code may not always use the most advanced, optimized, or Pythonic approach. Some implementations are intentionally written from scratch even when Python already provides a built-in solution.
+
+This repository represents my progress as I learn Python, experiment with different programming concepts, and build small projects.
 
 ## Technologies
 
 * Python
 * Command-line interface
 * Custom Python modules
+* Python standard library
 
 ## Project Structure
 
@@ -57,8 +73,9 @@ The code may not always use the most advanced or optimized approach. It represen
 ├── calculator.py
 ├── to_do_list.py
 └── abobakr_data/
-    ├── __init__.py
-    └── ...
+    └── abobakr_data/
+        ├── __init__.py
+        └── ...
 ```
 
 ## Development Status
@@ -67,4 +84,4 @@ This is an ongoing learning project.
 
 `calculator.py`, `to_do_list.py`, and `abobakr_data` are part of my Python learning journey.
 
-I plan to stop developing `to_do_list.py` and the `abobakr_data` library once I complete my Python learning phase. After that, this repository will mainly serve as a record of my progress and the projects I built while learning Python.
+Once I finish learning Python, I plan to stop developing these projects and the `abobakr_data` library. After that, this repository will mainly serve as a record of my progress and the projects I built while learning Python.

@@ -86,5 +86,4 @@ def zip_to_set_of_tuples(sequences):
     return result
 
 
-
 average = lambda numbers: sum(numbers) / len(numbers)

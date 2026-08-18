@@ -1,16 +1,17 @@
-def input_float(message: str) -> float:
-    while True:
-        try:
-            number = float(input(message))
-            return number
-        except ValueError:
-            continue
-
 
 def input_int(message: str) -> int:
     while True:
         try:
             number = int(input(message))
+            return number
+        except ValueError:
+            continue
+
+
+def input_float(message: str) -> float:
+    while True:
+        try:
+            number = float(input(message))
             return number
         except ValueError:
             continue
@@ -30,16 +31,12 @@ def print_separator(length: int) -> None:
 
 
 def convert_list_to_tuple(items):
-    new_tuple = ()
+    result = ()
 
     for item in items:
-        new_tuple += (item,)
+        result += (item,)
 
-    return new_tuple
-
-
-def set_difference(first_set, second_set):
-    return first_set - second_set
+    return result
 
 
 def set_union(first_set, second_set):
@@ -50,35 +47,41 @@ def set_intersection(first_set, second_set):
     return first_set & second_set
 
 
+def set_difference(first_set, second_set):
+    return first_set - second_set
+
+
 def set_symmetric_difference(first_set, second_set):
     return first_set ^ second_set
 
 
-def zip_to_list_of_tuples(sequences):
-    smallest_length = len(sequences[0])
+def smallest_length(sequences):
+    length = len(sequences[0])
 
     for sequence in sequences:
-        if len(sequence) < smallest_length:
-            smallest_length = len(sequence)
+        if len(sequence) < length:
+            length = len(sequence)
+
+    return length
+
+
+def zip_to_list_of_tuples(sequences):
+    length = smallest_length(sequences)
 
     result = [
         tuple(sequence[i] for sequence in sequences)
-        for i in range(smallest_length)
+        for i in range(length)
     ]
 
     return result
 
 
 def zip_to_set_of_tuples(sequences):
-    smallest_length = len(sequences[0])
-
-    for sequence in sequences:
-        if len(sequence) < smallest_length:
-            smallest_length = len(sequence)
+    length = smallest_length(sequences)
 
     result = {
         tuple(sequence[i] for sequence in sequences)
-        for i in range(smallest_length)
+        for i in range(length)
     }
 
     return result

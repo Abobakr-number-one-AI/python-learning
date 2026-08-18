@@ -1,4 +1,3 @@
-
 def input_int(message: str) -> int:
     while True:
         try:
@@ -69,7 +68,7 @@ def zip_to_list_of_tuples(sequences):
     length = smallest_length(sequences)
 
     result = [
-        tuple(sequence[i] for sequence in sequences)
+        convert_list_to_tuple([sequence[i] for sequence in sequences])
         for i in range(length)
     ]
 
@@ -85,6 +84,7 @@ def zip_to_set_of_tuples(sequences):
     }
 
     return result
+
 
 
 average = lambda numbers: sum(numbers) / len(numbers)

@@ -1,3 +1,21 @@
+def calculate_length(items):
+    count = 0
+
+    for item in items:
+        count += 1
+
+    return count
+
+
+def calculate_sum(numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
+
+
 def input_int(message: str) -> int:
     while True:
         try:
@@ -55,11 +73,11 @@ def set_symmetric_difference(first_set, second_set):
 
 
 def smallest_length(sequences):
-    length = len(sequences[0])
+    length = calculate_length(sequences[0])
 
     for sequence in sequences:
-        if len(sequence) < length:
-            length = len(sequence)
+        if calculate_length(sequence) < length:
+            length = calculate_length(sequence)
 
     return length
 
@@ -86,4 +104,4 @@ def zip_to_set_of_tuples(sequences):
     return result
 
 
-average = lambda numbers: sum(numbers) / len(numbers)
+average = lambda numbers: calculate_sum(numbers) / calculate_length(numbers)

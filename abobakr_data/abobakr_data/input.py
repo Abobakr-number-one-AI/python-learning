@@ -79,7 +79,7 @@ def zip_to_set_of_tuples(sequences):
     length = smallest_length(sequences)
 
     result = {
-        tuple(sequence[i] for sequence in sequences)
+        convert_list_to_tuple([sequence[i] for sequence in sequences])
         for i in range(length)
     }
 

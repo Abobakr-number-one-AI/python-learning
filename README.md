@@ -43,13 +43,12 @@ It currently includes functionality for:
 * Integer and floating-point conversion
 * String processing
 * Calculating lengths
-* Calculating sums
+* Calculating sums and averages
 * Generating ranges
 * Reversing sequences
-* Converting lists and tuples
+* Converting lists, tuples, and sets
 * Set operations
 * Recreating `zip()`-like operations
-* Calculating averages
 * Basic pseudo-random number generation
 
 Some functions intentionally recreate functionality that already exists in Python.

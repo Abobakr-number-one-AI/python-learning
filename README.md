@@ -37,16 +37,25 @@ The library provides helper functions and small implementations created to pract
 
 It currently includes functions for:
 
-* Input handling and validation
-* Printing separators
 * Calculating lengths
 * Calculating sums
 * Generating ranges
+* Stripping spaces from strings
+* Removing spaces from strings
+* Reversing sequences
+* Checking whether a string represents an integer
+* Converting strings to integers
+* Converting strings to floating-point numbers
+* Handling integer input
+* Handling floating-point input
+* Handling string input
+* Printing separators
 * Converting lists to tuples
-* Set difference
 * Set union
 * Set intersection
+* Set difference
 * Set symmetric difference
+* Finding the smallest length among sequences
 * Recreating `zip()`-like operations
 * Calculating averages
 
@@ -79,3 +88,10 @@ This repository represents my progress as I learn Python, experiment with differ
     └── abobakr_data/
         ├── __init__.py
         └── ...
+```
+
+## Project Status
+
+The `abobakr_data` library is being actively developed as part of my process of learning Python.
+
+After I finish learning Python, I plan to stop actively developing the library. It will remain as a practical record of what I learned during my Python learning journey.

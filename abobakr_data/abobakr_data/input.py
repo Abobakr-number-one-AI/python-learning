@@ -1,3 +1,6 @@
+import sys
+
+
 digit_values = {
     "0": 0,
     "1": 1,
@@ -44,6 +47,9 @@ def generate_range(number):
 def generate_range_two(start, stop):
     result = []
     current_number = start
+
+    if start > stop:
+        sys.exit(1)
 
     while current_number != stop:
         result += [current_number]
@@ -136,10 +142,10 @@ def int_python(number):
 def float_python(number):
     number = remove_spaces(number)
 
-    is_negative = False
-
     if number == "":
         return ""
+
+    is_negative = False
 
     if number[0] == "-":
         is_negative = True
@@ -165,11 +171,13 @@ def float_python(number):
     else:
         return ""
 
-    if decimal_part_text == "" or not is_digit(decimal_part_text):
+    if decimal_part_text == "":
+        return ""
+
+    if not is_digit(decimal_part_text):
         return ""
 
     decimal_digits = int_python(decimal_part_text)
-
     decimal_length = calculate_length(decimal_part_text)
 
     denominator = 1
@@ -218,11 +226,20 @@ def print_separator(length: int) -> None:
     print("=" * length)
 
 
-def convert_list_to_tuple(items):
+def convert_to_tuple(items):
     result = ()
 
     for item in items:
         result += (item,)
+
+    return result
+
+
+def convert_to_list(items):
+    result = []
+
+    for item in items:
+        result += [item]
 
     return result
 
@@ -259,7 +276,7 @@ def zip_to_list_of_tuples(sequences):
     length = find_smallest_length(sequences)
 
     result = [
-        convert_list_to_tuple(
+        convert_to_tuple(
             [sequence[index] for sequence in sequences]
         )
         for index in generate_range(length)
@@ -272,7 +289,7 @@ def zip_to_set_of_tuples(sequences):
     length = find_smallest_length(sequences)
 
     result = {
-        convert_list_to_tuple(
+        convert_to_tuple(
             [sequence[index] for sequence in sequences]
         )
         for index in generate_range(length)
@@ -280,6 +297,4 @@ def zip_to_set_of_tuples(sequences):
 
     return result
 
-
-def calculate_average(numbers):
-    return calculate_sum(numbers) / calculate_length(numbers)
+average = lambda numbers: calculate_sum(numbers) / calculate_length(numbers)

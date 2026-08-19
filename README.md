@@ -2,7 +2,7 @@
 
 This repository contains small Python projects created while learning and practicing Python programming.
 
-The projects focus on understanding Python fundamentals, practicing problem-solving, and experimenting with different programming concepts.
+The projects focus on understanding Python fundamentals, practicing problem-solving, and implementing common programming concepts manually.
 
 ## Projects
 
@@ -27,75 +27,44 @@ The calculator also handles invalid mathematical cases such as:
 
 ### To-Do List
 
-`to_do_list.py` is a simple command-line to-do list project created to practice Python programming concepts.
+`to_do_list.py` is a command-line to-do list project created to practice Python programming.
+
+The project is being developed as part of the learning process and will gradually include more features and Python concepts.
 
 ## Custom Library
 
-The `abobakr_data` directory contains a custom Python library developed as part of my Python learning process.
+The `abobakr_data` directory contains a custom Python library developed as part of the Python learning process.
 
-The library contains manually implemented functions designed to practice Python fundamentals and understand the logic behind common Python operations.
+The library contains manually implemented functions for practicing Python fundamentals and understanding how common operations work internally.
 
 It currently includes functionality for:
 
+* Input handling and validation
+* Integer and floating-point conversion
+* String processing
 * Calculating lengths
 * Calculating sums
 * Generating ranges
-* Removing spaces from strings
-* Stripping spaces from strings
 * Reversing sequences
-* Checking whether a string represents an integer
-* Converting strings to integers
-* Converting strings to floating-point numbers
-* Handling integer input
-* Handling floating-point input
-* Handling string input
-* Printing separators
-* Converting items to lists
-* Converting items to tuples
-* Set union
-* Set intersection
-* Set difference
-* Set symmetric difference
-* Finding the smallest sequence length
+* Converting lists and tuples
+* Set operations
 * Recreating `zip()`-like operations
 * Calculating averages
+* Basic pseudo-random number generation
 
 Some functions intentionally recreate functionality that already exists in Python.
 
-For example, the library contains custom implementations similar to operations performed by:
-
-* `len()`
-* `range()`
-* `int()`
-* `float()`
-* `reversed()`
-* `list()`
-* `tuple()`
-* `zip()`
-
-The purpose is not to replace Python's built-in functions.
-
-Instead, these implementations are written from scratch to understand the logic and mathematical concepts behind them.
-
-## Learning Approach
-
-The code in this repository is intentionally written as learning exercises.
-
-Some implementations may be longer, less optimized, or less Pythonic than their built-in equivalents.
-
-This is intentional.
-
-The goal is to understand how operations work by implementing them manually rather than simply relying on Python's built-in functions.
-
-The library is therefore considered a learning project rather than a production-ready alternative to Python's standard library.
+The purpose is not to replace Python's built-in functions, but to understand the concepts behind them by implementing similar behavior manually.
 
 ## Purpose
 
 The main purpose of this repository is learning and practice.
 
-The code represents my progress while learning Python, experimenting with programming concepts, solving problems, and implementing familiar functionality from scratch.
+The code may not always use the most advanced, optimized, or Pythonic approach. Some implementations are intentionally written from scratch even when Python already provides a built-in solution.
 
-The repository may contain experimental code and implementations that are later improved or replaced as my understanding of Python develops.
+This repository represents my progress while learning Python, experimenting with different programming concepts, and building small projects.
+
+The library is primarily being developed as part of my Python learning process. Once I finish learning Python, I plan to stop actively developing the library.
 
 ## Technologies
 
@@ -116,8 +85,8 @@ The repository may contain experimental code and implementations that are later 
         └── ...
 ```
 
-## Note
+## Learning Approach
 
-This repository is primarily a record of my learning process.
+The projects and library intentionally contain manually implemented solutions for concepts that can normally be handled using Python's built-in functionality.
 
-The implementations are not intended to be faster or better than Python's built-in functions. They exist to help me understand programming fundamentals by rebuilding familiar functionality step by step.
+This approach is used for educational purposes to gain a deeper understanding of Python fundamentals, algorithms, data structures, and basic programming concepts.
